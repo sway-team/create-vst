@@ -1,0 +1,57 @@
+{
+  "name": "create-vst",
+  "version": "2.1.0",
+  "type": "module",
+  "bin": {
+    "create-vst": "bin/create-vst.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "description": "Vue 起手模版脚手架",
+  "main": "bin/create-vst.js",
+  "scripts": {
+    "lint": "eslint --fix 'src/**/*.{ts,js}'",
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sway-team/create-vst.git"
+  },
+  "author": "BoTao <botaoxyz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@clack/prompts": "^0.6.3",
+    "@swayjs/prettier-config": "^1.0.0",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/fs-extra": "^11.0.1",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.14.6",
+    "@types/prompts": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "c8": "^7.13.0",
+    "cross-spawn": "^7.0.3",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "execa": "^7.0.0",
+    "fs-extra": "^11.1.0",
+    "kolorist": "^1.7.0",
+    "minimist": "^1.2.8",
+    "prettier": "2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vitest": "0.29.2"
+  }
+}

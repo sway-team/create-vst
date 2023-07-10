@@ -1,0 +1,54 @@
+body {
+  font-size: 14px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  /* 背景色 */
+  --bg-base-light: #fff;
+  --bg-base-dark: #0d1117;
+
+  --bg-dim-light: #fff;
+  --bg-dim-dark: #48484d;
+
+  /* 字体颜色 */
+  --text-color-base-light: #232323;
+  --text-color-base-dark: #e3e3e3;
+
+  --text-color-dim-light: #9a9b9c;
+  --text-color-dim-dark: #909092;
+
+  /* 边框颜色 */
+  --border-color-base-light: #e5e5e5;
+  --border-color-base-dark: #2f2f2f;
+}
+:root {
+  --primary-color: #5691b3;
+  /* 背景色 */
+  --c-bg-base: var(--bg-base-light);
+  --c-bg-dim: var(--bg-dim-light);
+
+  /* 字体颜色 */
+  --c-text-base: var(--text-color-base-light);
+  --c-text-dim: var(--text-color-dim-light);
+
+  /* 边框颜色 */
+  --c-border-base: var(--border-color-base-light);
+}
+
+.dark {
+  /* 背景色 */
+  --c-bg-base: var(--bg-base-dark);
+  --c-bg-dim: var(--bg-dim-dark);
+
+  /* 字体颜色 */
+  --c-text-base: var(--text-color-base-dark);
+  --c-text-dim: var(--text-color-dim-dark);
+
+  /* 边框颜色 */
+  --c-border-base: var(--border-color-base-dark);
+}
